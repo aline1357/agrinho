@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 AgroForte: Dashboard Sustentável</h1>
+        <p>Monitoramento em tempo real para uma agricultura de precisão.</p>
+    </header>
 
+    <main class="dashboard">
+        <div class="card" id="card-umidade">
+            <h3>Umidade do Solo</h3>
+            <p class="valor"><span id="txt-umidade">--</span>%</p>
+            <p class="status" id="status-umidade">Analisando...</p>
+        </div>
+
+        <div class="card" id="card-temp">
+            <h3>Temperatura do Ar</h3>
+            <p class="valor"><span id="txt-temp">--</span>°C</p>
+            <p class="status" id="status-temp">Analisando...</p>
+        </div>
+
+        <div class="card" id="card-irrigacao">
+            <h3>Sistema de Irrigação</h3>
+            <p class="valor-status" id="txt-irrigacao">DESLIGADO</p>
+            <p class="status">Automação Inteligente</p>
+        </div>
+    </main>
+
+    <section class="controles">
+        <button id="btn-atualizar">Simular Nova Leitura</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
