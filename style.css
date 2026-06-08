@@ -1,1 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #2e7d32; /* Verde Agro */
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #666;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 5px solid #2e7d32;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.valor {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.valor-status {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.status {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Cores dinâmicas para os estados */
+.alerta { color: #d32f2f; }
+.ideal { color: #2e7d32; }
+.ativo { color: #0288d1; }
+
+.controles {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
